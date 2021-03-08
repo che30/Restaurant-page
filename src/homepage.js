@@ -17,7 +17,7 @@ navHeaderRight.appendChild(menu())
 navHeaderRight.appendChild(contactUs())
 nav.appendChild(tabOne())
 nav.appendChild(navHeaderRight)
-nav.classList.add('d-flex','justify-content-around','pt-3')
+nav.classList.add('d-flex','justify-content-around','pt-3','align-items-baseline')
 content.appendChild(nav)
 
 }
