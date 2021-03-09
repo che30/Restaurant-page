@@ -15,7 +15,7 @@ const services = () => {
   const cc1 = document.createElement('div');
   cc1.classList.add('card', 'text-center');
   const img2 = document.createElement('img');
-  img2.setAttribute('src', '../assets/img/dish.svg');
+  img2.setAttribute('src', '.src/assets/img/dish.svg');
   img2.classList.add('card-img-top');
   img2.style.margin = '20% 0 0 40%';
   img2.style.fill = 'green';
@@ -42,7 +42,7 @@ const services = () => {
   const cc2 = document.createElement('div');
   cc2.classList.add('card', 'text-center');
   const img3 = document.createElement('img');
-  img3.setAttribute('src', '../assets/img/dish.svg');
+  img3.setAttribute('src', './src/assets/img/dish.svg');
   img3.classList.add('card-img-top');
   img3.style.margin = '20% 0 0 40%';
   const cb2 = document.createElement('div');
@@ -66,7 +66,7 @@ const services = () => {
   const cc3 = document.createElement('div');
   cc3.classList.add('card', 'text-center');
   const img4 = document.createElement('img');
-  img4.setAttribute('src', '../assets/img/dish.svg');
+  img4.setAttribute('src', '../src/assets/img/dish.svg');
   img4.classList.add('card-img-top');
   img4.style.margin = '20% 0 0 40%';
   const cb3 = document.createElement('div');
