@@ -7,21 +7,23 @@ export default function tab (){
 const navHeaderRight = document.createElement('div')
 navHeaderRight.classList.add('list-unstyled','d-flex','justify-content-between','w-50')
 
-const listItem4 = document.createElement('div')
+const listItem4 = document.createElement('button')
+listItem4.id = 'menu-1'
 listItem4.innerHTML = 'Menu'
 
 const listItem1 = document.createElement('div')
-const link = document.createElement('a')
-link.setAttribute("class","nav-link active")
-link.href = '#'
+const link = document.createElement('button')
 const t= document.createTextNode('home')
 link.appendChild(t)
+link.id = 'home-1'
 listItem1.appendChild(link)
 
-const listItem2 = document.createElement('div')
+const listItem2 = document.createElement('button')
 listItem2.innerHTML = 'About'
+listItem2.id = 'abt'
 
-const listItem3 = document.createElement('div')
+const listItem3 = document.createElement('button')
+listItem3.id = 'servi'
 listItem3.innerHTML = 'Services'
 
 const listItem5 = document.createElement('div')

@@ -1,6 +1,6 @@
 const services = ()=>{
   const container = document.createElement('div')
-  container.classList.add('d-none','flex-column','align-items-center','align-content-center','justify-content-around')
+  container.classList.add('d-none','flex-column','align-items-center','align-content-center','justify-content-around','servbody','mt-5')
   const h1 = document.createElement('h1')
   h1.innerHTML = 'offerring'
   const h2 = document.createElement('h2')

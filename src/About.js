@@ -1,6 +1,6 @@
 const about = ()=>{
   const container = document.createElement('div')
-  container.classList.add('d-none')
+  container.classList.add('d-none','about__1','flex-column','justify-content-center','mt-5','text-center')
   const h1 = document.createElement('h1')
   h1.innerHTML = 'About us'
   const h2 = document.createElement('h2')
@@ -10,6 +10,7 @@ const about = ()=>{
 container.appendChild(h1)
 container.appendChild(h2)
 container.appendChild(h3)
+// const about = document.querySelector('#abt');
 
 return container
 }
