@@ -16,7 +16,7 @@ const home = () => {
   button.appendChild(buttonText);
   button.classList.add('btn', 'btn-success', 'py-2', 'w-25');
   const img1 = document.createElement('img');
-  img1.setAttribute('src', '/assets/img/home.png');
+  img1.setAttribute('src', '../assets/img/home.png');
   img1.classList.add('w-25');
   const section2 = document.createElement('h3');
   section2.classList.add('text-center', 'my-4');
@@ -28,7 +28,7 @@ const home = () => {
   const cc1 = document.createElement('div');
   cc1.classList.add('card');
   const img2 = document.createElement('img');
-  img2.setAttribute('src', '/assets/img/plate1.png');
+  img2.setAttribute('src', '../assets/img/plate1.png');
   img2.classList.add('card-img-top');
   const cb1 = document.createElement('div');
   cb1.classList.add('card-body');
@@ -52,7 +52,7 @@ const home = () => {
   const cc2 = document.createElement('div');
   cc2.classList.add('card');
   const img3 = document.createElement('img');
-  img3.setAttribute('src', '/assets/img/plate1.png');
+  img3.setAttribute('src', '../assets/img/plate1.png');
   img3.classList.add('card-img-top');
 
   const cb2 = document.createElement('div');
@@ -78,7 +78,7 @@ const home = () => {
   const cc3 = document.createElement('div');
   cc3.classList.add('card');
   const img4 = document.createElement('img');
-  img4.setAttribute('src', '/assets/img/plate1.png');
+  img4.setAttribute('src', '../assets/img/plate1.png');
   img4.classList.add('card-img-top');
 
   const cb3 = document.createElement('div');

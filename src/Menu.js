@@ -10,7 +10,7 @@ export default function menu() {
   const cc1 = document.createElement('div');
   cc1.classList.add('card', 'text-center');
   const img2 = document.createElement('img');
-  img2.setAttribute('src', '/assets/img/plate1.png');
+  img2.setAttribute('src', '../assets/img/plate1.png');
   img2.classList.add('card-img-top');
   const cb1 = document.createElement('div');
   cb1.classList.add('card-body');
@@ -33,7 +33,7 @@ export default function menu() {
   const cc2 = document.createElement('div');
   cc2.classList.add('card', 'text-center');
   const img3 = document.createElement('img');
-  img3.setAttribute('src', '/assets/img/plate1.png');
+  img3.setAttribute('src', '../assets/img/plate1.png');
   img3.classList.add('card-img-top');
   const cb2 = document.createElement('div');
   cb2.classList.add('card-body');
@@ -56,7 +56,7 @@ export default function menu() {
   const cc3 = document.createElement('div');
   cc3.classList.add('card', 'text-center');
   const img4 = document.createElement('img');
-  img4.setAttribute('src', '/assets/img/plate1.png');
+  img4.setAttribute('src', '../assets/img/plate1.png');
   img4.classList.add('card-img-top');
   const cb3 = document.createElement('div');
   cb3.classList.add('card-body');
