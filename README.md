@@ -2,7 +2,7 @@
 This project is about a simple Restaurant page  application . The purpose of the project is teach learners to how to build a toggle navbar Usng Javascript solely and to arrange code in different modules
 for exportation and importation 
  
-![screenshot](./assets/img/Resto.png)
+![screenshot](../assets/img/Resto.png)
 
 ## Built With
 
