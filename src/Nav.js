@@ -6,7 +6,7 @@ import services from './Services';
 const navbar = () => {
   const nav = document.createElement('nav');
   nav.classList.add('d-flex', 'justify-content-around',
-    'mx-auto', 'mt-4', 'bg-warning', 'text-dark', 'rounded', 'py-2');
+    'mx-auto', 'mt-4', 'bg-warning', 'text-dark', 'rounded', 'py-2','align-items-center');
   nav.append(home());
   nav.appendChild(menu());
   nav.appendChild(about());

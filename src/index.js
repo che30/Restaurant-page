@@ -3,9 +3,11 @@ import bodyContain from './bodyContain';
 
 bodyContain();
 const tabs = document.getElementsByClassName('tabs');
-const menuBorder = document.querySelector('.borderM');
-menuBorder.style.border = '3px solid black';
-menuBorder.classList.add('rounded');
+const menuBorder = document.querySelector('.borderH');
+const menuBorderM = document.querySelector('.borderM');
+const menuBorderA = document.querySelector('.borderA');
+menuBorder.style.border = '2px solid black';
+menuBorder.classList.add('rounded','p-2');
 menuBorder.style.borderStyle = 'dotted';
 for (let i = 0; i < tabs.length; i += 1) {
   tabs[i].addEventListener('click', () => {
@@ -16,7 +18,11 @@ for (let i = 0; i < tabs.length; i += 1) {
         document.querySelector('.services').classList.remove('d-block');
         document.querySelector('.about').classList.add('d-none');
         document.querySelector('.services').classList.add('d-none');
-        document.querySelector('.borderM').style.border = 'none';
+        document.querySelector('.borderH').style.border = 'none';
+        menuBorderM.style.border = '2px solid black';
+        menuBorderM.classList.add('rounded','p-2');
+        menuBorderM.style.borderStyle = 'dotted';
+        document.querySelector('.borderA').style.border = 'none';
         break;
       case 'About':
         document.querySelector('.about').classList.remove('d-none');
@@ -24,6 +30,11 @@ for (let i = 0; i < tabs.length; i += 1) {
         document.querySelector('.services').classList.remove('d-block');
         document.querySelector('.menu').classList.add('d-none');
         document.querySelector('.services').classList.add('d-none');
+        menuBorderA.style.border = '2px solid black';
+        menuBorderA.classList.add('rounded','p-2');
+        menuBorderA.style.borderStyle = 'dotted';
+        document.querySelector('.borderM').style.border = 'none';
+        document.querySelector('.borderH').style.border = 'none';
         break;
       case 'Services':
         document.querySelector('.menu').classList.remove('d-block');
@@ -33,7 +44,7 @@ for (let i = 0; i < tabs.length; i += 1) {
         document.querySelector('.services').classList.remove('d-none');
         break;
       case 'Home':
-        menuBorder.style.border = '1px solid black';
+        menuBorder.style.border = '2px solid black';
         menuBorder.style.borderStyle = 'dotted';
         document.querySelector('.menu').classList.remove('d-block');
         document.querySelector('.about').classList.remove('d-block');
@@ -41,6 +52,8 @@ for (let i = 0; i < tabs.length; i += 1) {
         document.querySelector('.menu').classList.add('d-none');
         document.querySelector('.about').classList.add('d-none');
         document.querySelector('.services').classList.add('d-none');
+        document.querySelector('.borderM').style.border = 'none';
+        document.querySelector('.borderA').style.border = 'none';
         break;
       default:
         document.querySelector('.menu').classList.add('d-none');

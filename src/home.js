@@ -1,7 +1,7 @@
 const home = () => {
   const mainDiv = document.createElement('div');
   const home = document.createElement('div');
-  home.classList.add('tabs', 'borderM');
+  home.classList.add('tabs', 'borderH');
   home.innerHTML = 'Home';
   mainDiv.appendChild(home);
   home.style.cursor = 'pointer';
