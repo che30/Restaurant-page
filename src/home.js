@@ -5,7 +5,7 @@ const home = () => {
   home.innerHTML = 'Home';
   mainDiv.appendChild(home);
   home.style.cursor = 'pointer';
-  document.body.style.backgroundImage = "url('./img/restaurant_background.avif')";
+  document.body.style.backgroundImage = "url('../dist/assets/img/restaurant_background.avif')";
   document.body.style.backgroundRepeat = 'no-repeat';
   document.body.style.backgroundSize = 'cover';
   return mainDiv;
