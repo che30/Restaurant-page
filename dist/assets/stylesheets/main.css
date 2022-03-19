@@ -1,1 +1,12 @@
 /* nothing to add */
+nav{
+  width: 50%;
+}
+@media(max-width: 567px){
+  nav{
+    width: 90%;
+  }
+  .container-fluid {
+    height: 90vh;
+  }
+}
