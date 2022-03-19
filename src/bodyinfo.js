@@ -13,15 +13,15 @@ const bodyInfo = () => {
   const serviceContainer = document.createElement('div');
   serviceContainer.classList.add('d-flex', 'justify-content-center', 'flex-wrap');
   const serviceImg1 = document.createElement('img');
-  serviceImg1.setAttribute('src', '../dist/assets/img/plates.webp');
+  serviceImg1.setAttribute('src', './assets/img/plates.webp');
   serviceImg1.classList.add('bg-white');
   const serviceImg2 = document.createElement('img');
-  serviceImg2.setAttribute('src', '../dist/assets/img/glass.webp');
+  serviceImg2.setAttribute('src', './assets/img/glass.webp');
   serviceImg2.classList.add('third__image');
   serviceImg2.classList.add('mx-3');
   const serviceImg3 = document.createElement('img');
   serviceImg3.classList.add('third__image');
-  serviceImg3.setAttribute('src', '../dist/assets/img/tray.webp');
+  serviceImg3.setAttribute('src', './assets/img/tray.webp');
   serviceContainer.appendChild(serviceImg1);
   serviceContainer.appendChild(serviceImg2);
   serviceContainer.appendChild(serviceImg3);
@@ -89,13 +89,13 @@ const bodyInfo = () => {
   holdImageFour.appendChild(holdFourText);
   holdImageFour.appendChild(menuImageFour);
 
-  menuImageOne.setAttribute('src', '../dist/assets/img/plate1.png');
+  menuImageOne.setAttribute('src', './assets/img/plate1.png');
   menuImageOne.style.width = '40%';
-  menuImageTwo.setAttribute('src', '../dist/assets/img/home.png');
+  menuImageTwo.setAttribute('src', './assets/img/home.png');
   menuImageTwo.style.width = '40%';
-  menuImageThree.setAttribute('src', '../dist/assets/img/plate1.png');
+  menuImageThree.setAttribute('src', './assets/img/plate1.png');
   menuImageThree.style.width = '40%';
-  menuImageFour.setAttribute('src', '../dist/assets/img/home.png');
+  menuImageFour.setAttribute('src', './assets/img/home.png');
   menuImageFour.style.width = '40%';
   columnOne.appendChild(holdImageOne);
   columnTwo.appendChild(holdImageTwo);
