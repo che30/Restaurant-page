@@ -4,7 +4,7 @@ const bodyInfo = () => {
   menu.classList.add('d-none', 'menu');
   const about = document.createElement('div');
   about.classList.add('d-none', 'about', 'text-center', 'pt-5', 'text-white', 'h1');
-  about.style.marginTop = '22vh';
+  about.style.marginTop = '14vh';
   const services = document.createElement('div');
   services.classList.add('d-none', 'services', 'text-center', 'text-white', 'h1', 'bg-dark', 'pb-5');
   about.innerHTML = 'We cook the best tasty food We cook the best food in the entire city, with excellent customer service, the best meals and at the best price, visit us';
