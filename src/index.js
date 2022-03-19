@@ -6,6 +6,7 @@ const tabs = document.getElementsByClassName('tabs');
 const menuBorder = document.querySelector('.borderH');
 const menuBorderM = document.querySelector('.borderM');
 const menuBorderA = document.querySelector('.borderA');
+const menuBorderS = document.querySelector('.borderS');
 menuBorder.style.border = '2px solid black';
 menuBorder.classList.add('rounded','p-2');
 menuBorder.style.borderStyle = 'dotted';
@@ -23,6 +24,7 @@ for (let i = 0; i < tabs.length; i += 1) {
         menuBorderM.classList.add('rounded','p-2');
         menuBorderM.style.borderStyle = 'dotted';
         document.querySelector('.borderA').style.border = 'none';
+        document.querySelector('.borderS').style.border = 'none';
         break;
       case 'About':
         document.querySelector('.about').classList.remove('d-none');
@@ -35,6 +37,7 @@ for (let i = 0; i < tabs.length; i += 1) {
         menuBorderA.style.borderStyle = 'dotted';
         document.querySelector('.borderM').style.border = 'none';
         document.querySelector('.borderH').style.border = 'none';
+        document.querySelector('.borderS').style.border = 'none';
         break;
       case 'Services':
         document.querySelector('.menu').classList.remove('d-block');
@@ -42,6 +45,12 @@ for (let i = 0; i < tabs.length; i += 1) {
         document.querySelector('.menu').classList.add('d-none');
         document.querySelector('.about').classList.add('d-none');
         document.querySelector('.services').classList.remove('d-none');
+        document.querySelector('.borderM').style.border = 'none';
+        document.querySelector('.borderH').style.border = 'none';
+        document.querySelector('.borderA').style.border = 'none';
+        menuBorderS.style.border = '2px solid black';
+        menuBorderS.classList.add('rounded','p-2');
+        menuBorderS.style.borderStyle = 'dotted';
         break;
       case 'Home':
         menuBorder.style.border = '2px solid black';
@@ -54,6 +63,7 @@ for (let i = 0; i < tabs.length; i += 1) {
         document.querySelector('.services').classList.add('d-none');
         document.querySelector('.borderM').style.border = 'none';
         document.querySelector('.borderA').style.border = 'none';
+        document.querySelector('.borderS').style.border = 'none';
         break;
       default:
         document.querySelector('.menu').classList.add('d-none');
