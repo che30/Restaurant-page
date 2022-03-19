@@ -1,8 +1,8 @@
-const services = () => {
+const about = () => {
   const contain = document.createElement('div');
+  contain.innerHTML = 'About';
   contain.classList.add('tabs');
-  contain.innerHTML = 'Services';
   contain.style.cursor = 'pointer';
   return contain;
 };
-export default services;
+export default about;

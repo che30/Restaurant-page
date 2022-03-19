@@ -1,62 +1,51 @@
 /* eslint-disable import/extensions */
-import homepage from './homepage.js';
+import bodyContain from './bodyContain';
 
-homepage();
-const abt = document.getElementById('abt');
-const abt1 = document.querySelector('.about__1');
-
-const servi = document.getElementById('servi');
-const servbody = document.querySelector('.servbody');
-
-const menu1 = document.querySelector('.menu__1');
-const menu2 = document.getElementById('menu-1');
-const s1 = document.querySelector('.s1');
-
-
-const home1 = document.getElementById('home-1');
-home1.addEventListener('click', () => {
-  s1.classList.remove('d-none');
-  menu1.classList.remove('d-flex');
-  menu1.classList.remove('d-block');
-  menu1.classList.add('d-none');
-  servbody.classList.remove('d-flex');
-  servbody.classList.remove('d-block');
-  servbody.classList.add('d-none');
-  abt1.classList.remove('d-flex');
-  abt1.classList.remove('d-block');
-  abt1.classList.add('d-none');
-});
-
-abt.addEventListener('click', () => {
-  abt1.classList.remove('d-none');
-  abt1.classList.add('d-flex');
-  servbody.classList.remove('d-flex');
-  servbody.classList.add('d-none');
-  menu1.classList.remove('d-flex');
-  menu1.classList.add('d-none');
-  s1.classList.remove('d-block');
-  s1.classList.remove('d-flex');
-  s1.classList.add('d-none');
-});
-
-servi.addEventListener('click', () => {
-  servbody.classList.remove('d-none');
-  servbody.classList.add('d-flex');
-  menu1.classList.remove('d-flex');
-  menu1.classList.add('d-none');
-  abt1.classList.remove('d-flex');
-  abt1.classList.add('d-none');
-  s1.classList.remove('d-flex');
-  s1.classList.add('d-none');
-});
-
-menu2.addEventListener('click', () => {
-  menu1.classList.remove('d-none');
-  menu1.classList.add('d-flex');
-  servbody.classList.remove('d-flex');
-  servbody.classList.add('d-none');
-  abt1.classList.remove('d-flex');
-  abt1.classList.add('d-none');
-  s1.classList.remove('d-flex');
-  s1.classList.add('d-none');
-});
+bodyContain();
+const tabs = document.getElementsByClassName('tabs');
+const menuBorder = document.querySelector('.borderM');
+menuBorder.style.border = '3px solid black';
+menuBorder.classList.add('rounded');
+menuBorder.style.borderStyle = 'dotted';
+for (let i = 0; i < tabs.length; i += 1) {
+  tabs[i].addEventListener('click', () => {
+    switch (tabs[i].innerHTML) {
+      case 'Menu':
+        document.querySelector('.menu').classList.remove('d-none');
+        document.querySelector('.about').classList.remove('d-block');
+        document.querySelector('.services').classList.remove('d-block');
+        document.querySelector('.about').classList.add('d-none');
+        document.querySelector('.services').classList.add('d-none');
+        document.querySelector('.borderM').style.border = 'none';
+        break;
+      case 'About':
+        document.querySelector('.about').classList.remove('d-none');
+        document.querySelector('.menu').classList.remove('d-block');
+        document.querySelector('.services').classList.remove('d-block');
+        document.querySelector('.menu').classList.add('d-none');
+        document.querySelector('.services').classList.add('d-none');
+        break;
+      case 'Services':
+        document.querySelector('.menu').classList.remove('d-block');
+        document.querySelector('.about').classList.remove('d-block');
+        document.querySelector('.menu').classList.add('d-none');
+        document.querySelector('.about').classList.add('d-none');
+        document.querySelector('.services').classList.remove('d-none');
+        break;
+      case 'Home':
+        menuBorder.style.border = '1px solid black';
+        menuBorder.style.borderStyle = 'dotted';
+        document.querySelector('.menu').classList.remove('d-block');
+        document.querySelector('.about').classList.remove('d-block');
+        document.querySelector('.services').classList.remove('d-block');
+        document.querySelector('.menu').classList.add('d-none');
+        document.querySelector('.about').classList.add('d-none');
+        document.querySelector('.services').classList.add('d-none');
+        break;
+      default:
+        document.querySelector('.menu').classList.add('d-none');
+        document.querySelector('.about').classList.add('d-none');
+        document.querySelector('.services').classList.add('d-none');
+    }
+  });
+}
